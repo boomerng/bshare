@@ -1,0 +1,8 @@
+Login: only with google, facebook or twitter
+
+Pages: 
+1. My board game list
+2. Find a board game
+   a. Search 
+   b. Details: Image, Game name, user name, phone number, email, address?
+3. Account details
