@@ -6,3 +6,8 @@ Pages:
    a. Search 
    b. Details: Image, Game name, user name, phone number, email, address?
 3. Account details
+
+https://bgg-json.azurewebsites.net/
+
+API:
+https://bgg-json.azurewebsites.net/collection/edwalter
