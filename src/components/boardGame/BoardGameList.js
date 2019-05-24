@@ -1,5 +1,5 @@
 import React from 'react';
-import { getBoardGames } from '../../api/DataApi';
+import { getBoardGames } from 'src/api/DataApi';
 import BoardGameItem from './BoardGameItem';
 
 const BoardGameList = () => {
@@ -7,7 +7,7 @@ const BoardGameList = () => {
     <div>
       {
         getBoardGames().map((game) => (
-          <BoardGameItem game={game} />
+          <BoardGameItem key={game.gameId} {...game} />
         ))
       }
     </div>
