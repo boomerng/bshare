@@ -11,3 +11,5 @@ https://bgg-json.azurewebsites.net/
 
 API:
 https://bgg-json.azurewebsites.net/collection/edwalter
+
+Next step: design a detail view

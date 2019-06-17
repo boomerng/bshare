@@ -1,4 +1,7 @@
 import React from 'react';
+import classNames from 'classnames';
+
+import '../../styles/boardGame/BoardGameItem.css';
 
 const BoardGameItem = (props) => {
   const {
@@ -10,20 +13,20 @@ const BoardGameItem = (props) => {
     isExpansion
   } = props;
   return (
-    <div style={{...styles.container, ...styles.rowDirection }}>
-      <img src={thumbnail} alt="image not available" style={styles.thumbnail} />
-      <div style={{...styles.container, ...styles.colDirection } }>
-        <div>
+    <div className={classNames(`container`, `rowDirection`)}>
+      <img src={thumbnail} alt="image not available" className={classNames(`thumbnail`)} /> 
+      <div className={classNames(`container`, `colDirection`)}>
+        <div className={`title`}>
           {name}
         </div>
         <div>
-          {`minPlayer:${minPlayers}   maxPlayers:${maxPlayers}`}
+          {`Players:${minPlayers}-${maxPlayers}`}
         </div>
         <div>
-          {`playingTime:${playingTime}`}
+          {`PlayingTime:${playingTime}`}
         </div>
         <div>
-          {`isExpansion:${isExpansion ? 'Yes': 'No'}`}
+          {`Expansion: ${isExpansion ? 'Yes': 'No'}`}
         </div>
       </div>
     </div>
@@ -31,20 +34,3 @@ const BoardGameItem = (props) => {
 };
 
 export default BoardGameItem;
-
-const styles = {
-  container: {
-    display: 'flex',
-    height: 200,
-  },
-  thumbnail: { 
-    width: '200',
-    height: '100%'
-  },
-  rowDirection: {
-    flexDirection: 'row',
-  },
-  colDirection: {
-    flexDirection: 'column',
-  }
-};
